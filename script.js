@@ -54,7 +54,7 @@ function matchCards(img1, img2) {
         cardOne.removeEventListener("click", flipCard);
         cardTwo.removeEventListener("click", flipCard);
         cardOne = cardTwo = "";
-        return disableDeck = false & mostrarModal();
+        return disableDeck = false;
     }
 
     setTimeout(() => {
