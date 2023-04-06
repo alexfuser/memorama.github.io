@@ -14,7 +14,21 @@ let cardOne, cardTwo, timer;
 
 function mostrarModal() {
     const modal = document.getElementById('myModal');
+    var span = document.getElementsByClassName("modal-close")[0];
+
     modal.style.display = 'block';
+
+    span.addEventListener("click",function() {
+        modal.style.display = "none";
+      });
+    
+    window.addEventListener("click",function(event) {
+        if (event.target == modal) {
+          modal.style.display = "none";
+        }
+    });
+    
+   
 }
 
 function initTimer() {
