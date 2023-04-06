@@ -33,7 +33,7 @@ body{
 }
 .cards{
   height: 1000px;
-  width: 780px;
+  width: 740px;
   flex-wrap: wrap;
   justify-content: space-between;
 }
@@ -173,22 +173,23 @@ body{
 
 .modal {
   display: none; /* Oculta el modal por defecto */
-  position: fixed; /* Lo posiciona en la pantalla */
+  position: absolute; /* Lo posiciona en la pantalla */
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
   z-index: 1; /* Lo coloca por encima del contenido normal */
-  left: 0;
-  top: 0;
-  width: 100%;
-  height: 100%;
+  width: 450px;
+  height: 450px;
   overflow: auto; /* Habilita el desplazamiento si el contenido es demasiado largo */
-  background-color: rgba(0, 0, 0, 0.4); /* Fondo oscuro semitransparente */
+  background-image: url("images/7.jpg");
+  background-size: cover;
+
 }
 
 .modal-content {
-  background-color: #fefefe; /* Fondo blanco */
-  margin: 15% auto; /* Centra el modal verticalmente y lo aleja de la parte superior */
-  padding: 20px;
-  border: 1px solid #888;
-  width: 80%; /* Ancho del modal */
+
+  background-size: cover;
+  width: 100%; /* Ancho del modal */
 }
 
 /* Estilo para el botón de cerrar */
