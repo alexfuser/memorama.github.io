@@ -200,7 +200,7 @@ body{
 
 /* Estilo para el botón de cerrar */
 .modal-close {
-  color: #aaa;
+  color: #fff;
   float: right;
   font-size: 28px;
   font-weight: bold;
